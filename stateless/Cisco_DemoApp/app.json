@@ -1,0 +1,26 @@
+{
+    "apicversion":"3.0(1k)",
+    "appid":"DemoApp",
+    "author":"Fabrice Servais",
+    "category":[
+        "Tools and Utilities",
+        "Cisco Automation and Orchestration",
+        "Beta"
+    ],
+    "contact":{
+        "contact-email":"fservais@cisco.com",
+        "contact-phone":"123-4567890",
+        "contact-url":"http://www.cisco.com/go/aci"
+    },
+    "iconfile":"icon.png",
+    "metaversion":"1.1",
+    "name":"DemoApp",
+    "permissions":[
+        "admin"
+    ],
+    "permissionslevel":"read",
+    "shortdescr":"My first ACI app",
+    "vendor":"Cisco",
+    "vendordomain":"Cisco",
+    "version":"1.0"
+}
