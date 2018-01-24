@@ -1,0 +1,28 @@
+{
+    "api":{
+        "getTenant.json":"Get the list of the tenants in the docker container.",
+        "testAPI.json":"API to test the connectivity to the docker container."
+    },
+    "apicversion":"3.0(1k)",
+    "appid":"DemoStatefulApp",
+    "author":"Fabrice Servais",
+    "category":[
+        "Beta"
+    ],
+    "contact":{
+        "contact-email":"aci-devnet@external.cisco.com",
+        "contact-phone":"123-4567890",
+        "contact-url":"http://www.cisco.com/go/aci"
+    },
+    "iconfile":"icon.png",
+    "metaversion":"1.1",
+    "name":"DemoStatefulApp",
+    "permissions":[
+        "admin"
+    ],
+    "permissionslevel":"read",
+    "shortdescr":"My first ACI app",
+    "vendor":"Cisco",
+    "vendordomain":"Cisco",
+    "version":"1.0"
+}
