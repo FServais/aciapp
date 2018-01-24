@@ -12,6 +12,18 @@ In this repo, you'll find some resources to get you quickly started on developin
 ### Prerequisites
 
 #### UNIX (Linux, macOS,...)
+A few libraries and commands need to be installed prior to the usage of the tools.
+- `gcc `
+- `g++ `
+- `make `
+- `libffi-dev `
+- `openssl-dev` (or `libssl-dev`)
+- `python-dev`
+- `'zip'`
+- `libmagic`
+	- On macOS: Use the packet manager "Homebrew": `$ brew install libmagic `
+  - Sometimes already present in Linux
+
 
 #### Docker
 Alternatively, you can use the docker image provided to run the tools.
@@ -40,9 +52,12 @@ This command uses the `-v` parameter to mount a local directory into the contain
 ```
 docker exec -it aciapptools python tools/aci_app_creator.py -o <FOLDER_IN_CONTAINER>
 ```
+2. You'll find the resulting app in `<LOCAL_FOLDER>`
 
 
 ### ACI App Packager
+
+#### Using docker container
 1. Put your app in `<LOCAL_FOLDER>`
 2. Run the following command:
 ```
