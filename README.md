@@ -1,4 +1,4 @@
-# ACI AppCenter App
+# ACI AppCenter Apps and Tools
 
 In this repo, you'll find some resources to get you quickly started on developing an ACI App.
 
