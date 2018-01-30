@@ -10,6 +10,7 @@ In this repo, you'll find some resources to get you quickly started on developin
 ## Tools
 
 ### Prerequisites
+First, download the pacakge the ACI App Tools package from DevNet (`cisco_aci_app_tools-1.1.tar.gz`).
 
 #### UNIX (Linux, macOS,...)
 A few libraries and commands need to be installed prior to the usage of the tools.
@@ -30,6 +31,8 @@ Also, we need to install the python libraries. The easiest way is to create a `v
 1. `virtualenv aciapptools`
 2. `source aciapptools/bin/activate`
 3. `(aciapptools) pip install tools/resources/cisco_aci_app_tools-1.1.tar.gz`
+
+The tools are located in `tools/resources/cisco_aci_app_tools-1.1.tar.gz`. First, uncompress the archive. The tools are then located inside the `tools/` directory.
 
 
 #### Docker
@@ -54,7 +57,12 @@ This command uses the `-v` parameter to mount a local directory into the contain
 ### ACI App Creator
 
 #### UNIX (Linux, macOS,...)
-The tools are located in `tools/resources/cisco_aci_app_tools-1.1.tar.gz`. You'll first need to uncompress the archive.
+
+The creator is launched using this command:
+```
+python aci_app_creator.py -o <OUTPUT_FOLDER>
+```
+The `-o` parameter is optional.
 
 
 #### Using docker container
@@ -66,6 +74,15 @@ docker exec -it aciapptools python tools/aci_app_creator.py -o <FOLDER_IN_CONTAI
 
 
 ### ACI App Packager
+
+#### UNIX (Linux, macOS,...)
+
+The packager is launched using this command:
+```
+python aci_app_packager.py -f <PATH_TO_APP_ROOT_DIRECTORY>
+```
+The `-f` parameter is mandatory.
+
 
 #### Using docker container
 1. Put your app in `<LOCAL_FOLDER>`
