@@ -19,10 +19,17 @@ A few libraries and commands need to be installed prior to the usage of the tool
 - `libffi-dev `
 - `openssl-dev` (or `libssl-dev`)
 - `python-dev`
-- `'zip'`
+- `zip`
 - `libmagic`
 	- On macOS: Use the packet manager "Homebrew": `$ brew install libmagic `
-  - Sometimes already present in Linux
+	- Sometimes already present in Linux
+- `pip`
+- `virtualenv`
+
+Also, we need to install the python libraries. The easiest way is to create a `virtualenv` (for *python 2.7*):
+1. `virtualenv aciapptools`
+2. `source aciapptools/bin/activate`
+3. `(aciapptools) pip install tools/resources/cisco_aci_app_tools-1.1.tar.gz`
 
 
 #### Docker
@@ -45,6 +52,9 @@ This command uses the `-v` parameter to mount a local directory into the contain
 
 
 ### ACI App Creator
+
+#### UNIX (Linux, macOS,...)
+The tools are located in `tools/resources/cisco_aci_app_tools-1.1.tar.gz`. You'll first need to uncompress the archive.
 
 
 #### Using docker container
