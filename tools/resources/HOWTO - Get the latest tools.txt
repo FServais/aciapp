@@ -1,1 +1,4 @@
 https://developer.cisco.com/site/aci/docs/app-center/getting-started/
+
+Download the package and copy it in aciapp/tools/resources/
+
